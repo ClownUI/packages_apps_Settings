@@ -20,6 +20,15 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="top_level_settings">
 
+        <com.android.settings.widget.HomepagePreference
+            android:fragment="com.clown.settings.CarnivalLayout"
+            android:icon="@drawable/ic_settings_cogs_filled"
+            android:key="top_level_clown"
+            android:order="-50"
+            android:title="@string/clown_settings_title"
+            android:summary="@string/clown_settings_summary"
+            settings:controller="com.clown.settings.TopLevelSettingsPreferenceController"/>
+
     <PreferenceCategory
         android:order="-130"
         android:key="top_level_connectivity_category"

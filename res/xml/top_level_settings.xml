@@ -186,6 +186,15 @@
         settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
 
     <com.android.settings.widget.HomepagePreference
+        android:fragment="com.clown.settings.CarnivalLayout"
+        android:icon="@drawable/ic_settings_cogs"
+        android:key="top_level_clown"
+        android:order="9"
+        android:title="@string/clown_settings_title"
+        android:summary="@string/clown_settings_summary"
+        settings:controller="com.clown.settings.TopLevelSettingsPreferenceController"/>
+
+    <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.system.SystemDashboardFragment"
         android:icon="@drawable/ic_settings_system_dashboard_white"
         android:key="top_level_system"
