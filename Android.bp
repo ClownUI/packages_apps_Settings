@@ -65,6 +65,7 @@ android_library {
         "res-export", // for external usage
         "res-product",
         "res-clown",
+        "TouchGestures/res",
     ],
     static_libs: [
         // External dependencies
