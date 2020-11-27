@@ -36,6 +36,10 @@
     <string name="selinux_status_permissive">Permissive</string>
     <string name="selinux_status_enforcing">Enforcing</string>
     
+    <!-- Advanced keyboard settings -->
+    <string name="keyboard_extras_title">Extras</string>
+    <string name="advanced_keyboard_settings_title">Advanced settings</string>
+
     <!-- Android debugging as root -->
     <string name="adb_enable_root">Rooted debugging</string>
     <string name="adb_enable_summary_root">Allow running Android debugging as root</string>
