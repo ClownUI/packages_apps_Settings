@@ -18,6 +18,7 @@
 
      <!-- About device screen, ClownUI -->
     <string name="clownui_version">ClownUI version</string>
+    <string name="menu_key_firmwareversion" translatable="false">firmware_version</string>
     
     <!-- About device screen, Build date -->
     <string name="build_date">Build date</string>
@@ -301,4 +302,5 @@
     <!-- Black theme for dark mode -->
     <string name="berry_black_theme_title">Pure black</string>
     <string name="berry_black_theme_summary">Pure black background for dark theme</string>
+
 </resources>
