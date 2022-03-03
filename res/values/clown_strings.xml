@@ -31,4 +31,7 @@
     <!-- Hardware info -->
     <string name="platform_revision">Platform</string>
     <string name="total_ram">Total RAM</string>
+
+    <!-- ClownUI Maintainer -->
+    <string name="clown_maintainer">Build Maintainer</string>
 </resources>
