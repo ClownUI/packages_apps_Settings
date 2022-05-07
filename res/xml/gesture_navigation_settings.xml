@@ -65,6 +65,13 @@
             android:title="@string/show_navbar_gesture_bar_title"
             android:summary="@string/show_navbar_gesture_bar_summary"
             android:defaultValue="true" />
+
+        <com.android.settings.custom.preference.SecureSettingSwitchPreference
+            android:key="keyboard_no_navigation_bar"
+            android:title="@string/keyboard_no_navigation_title"
+            android:summary="@string/keyboard_no_navigation_summary"
+            android:defaultValue="false"
+            android:dependency="navigation_bar_hint" />
     </PreferenceCategory>
 
     <com.android.settingslib.widget.FooterPreference
