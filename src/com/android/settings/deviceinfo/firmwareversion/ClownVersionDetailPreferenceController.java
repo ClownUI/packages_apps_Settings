@@ -40,11 +40,15 @@ import com.android.settingslib.RestrictedLockUtilsInternal;
 
 public class ClownVersionDetailPreferenceController extends BasePreferenceController {
 
-    private static final String TAG = "clownVersionDialogCtrl";
+    private static final String TAG = "ClownVersionDialogCtrl";
     private static final int DELAY_TIMER_MILLIS = 500;
     private static final int ACTIVITY_TRIGGER_COUNT = 3;
 
     private static final String KEY_CLOWN_VERSION_PROP = "ro.clown.version";
+    private static final String KEY_CLOWN_ANDROID_PROP = "ro.clown.android";
+    private static final String KEY_CLOWN_DEVICE_PROP = "ro.product.device";
+    private static final String KEY_CLOWN_BUILDTYPE_PROP = "ro.clown.buildtype";
+    private static final String KEY_CLOWN_BUILDVER_PROP = "ro.clown.display.version";
 
     private static final String PLATLOGO_PACKAGE_NAME = "com.android.egg";
     private static final String PLATLOGO_ACTIVITY_CLASS =
@@ -55,6 +59,7 @@ public class ClownVersionDetailPreferenceController extends BasePreferenceContro
 
     private RestrictedLockUtils.EnforcedAdmin mFunDisallowedAdmin;
     private boolean mFunDisallowedBySystem;
+    private boolean fullRomVersion = false;
 
     public ClownVersionDetailPreferenceController(Context context, String key) {
         super(context, key);
@@ -79,14 +84,21 @@ public class ClownVersionDetailPreferenceController extends BasePreferenceContro
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(KEY_CLOWN_VERSION_PROP,
-                mContext.getString(R.string.unknown));
+        return shortRomVersion();
     }
 
     @Override
     public boolean handlePreferenceTreeClick(Preference preference) {
         if (!TextUtils.equals(preference.getKey(), getPreferenceKey())) {
             return false;
+        }
+        if (fullRomVersion) {
+            preference.setSummary(shortRomVersion());
+            fullRomVersion = false;
+        } else {
+            preference.setSummary(SystemProperties.get(KEY_CLOWN_BUILDVER_PROP,
+                mContext.getString(R.string.unknown)));
+            fullRomVersion = true;
         }
         if (Utils.isMonkeyRunning()) {
             return false;
@@ -112,6 +124,19 @@ public class ClownVersionDetailPreferenceController extends BasePreferenceContro
             }
         }
         return true;
+    }
+
+    private String shortRomVersion() {
+        String romVersion = SystemProperties.get(KEY_CLOWN_VERSION_PROP,
+                this.mContext.getString(R.string.device_info_default));
+        String romAndroid = SystemProperties.get(KEY_CLOWN_ANDROID_PROP,
+                this.mContext.getString(R.string.device_info_default));
+        String romDevice = SystemProperties.get(KEY_CLOWN_DEVICE_PROP,
+                this.mContext.getString(R.string.device_info_default));
+        String romBuildtype = SystemProperties.get(KEY_CLOWN_BUILDTYPE_PROP,
+                this.mContext.getString(R.string.device_info_default));
+        String shortVersion = romVersion + " | " + romAndroid + " | " + romDevice + " | " + romBuildtype;
+        return shortVersion;
     }
 
     /**
