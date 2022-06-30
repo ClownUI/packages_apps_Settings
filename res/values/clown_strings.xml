@@ -318,4 +318,8 @@
     <string name="qs_battery_category_title">In QS Panel</string>
     <string name="qs_battery_percent_title" translatable="false">@string/status_bar_battery_percent_title</string>
     <string name="qs_use_status_bar_battery_style">Follow status bar style</string>
+
+    <!-- Lock screen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Lock screen charging info</string>
+    <string name="lockscreen_battery_info_summary">Display negotiated charger max current and voltage, and battery temperature on lock screen while charging</string>
 </resources>
