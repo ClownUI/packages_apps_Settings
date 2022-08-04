@@ -187,6 +187,12 @@
                 android:title="@string/qs_show_data_usage_title"
                 android:summary="@string/qs_show_data_usage_summary"
                 android:defaultValue="true" />
+
+        <Preference
+            android:key="status_bar_lyric_settings"
+            android:title="@string/status_bar_lyric_title"
+            android:summary="@string/status_bar_lyric_summary"
+            android:fragment="com.android.settings.custom.fragments.StatusbarLyricSettings"/>
     </PreferenceCategory>
 
 </PreferenceScreen>
