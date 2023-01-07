@@ -50,6 +50,12 @@
             android:entryValues="@array/status_bar_clock_position_values"
             android:defaultValue="2" />
 
+        <com.android.settings.clown.preference.SystemSettingSwitchPreference
+            android:key="statusbar_clock_chip"
+            android:title="@string/statusbar_clock_chip_title"
+            android:summary="@string/statusbar_clock_chip_summary"
+            android:defaultValue="true" />
+
         <Preference
             android:key="clock"
             android:title="@string/status_bar_clock_title"

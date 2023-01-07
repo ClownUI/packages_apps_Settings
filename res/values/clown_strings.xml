@@ -359,4 +359,8 @@
     <string name="clock_date_left">Left of time</string>
     <string name="unit_seconds">seconds</string>
 
+
+    <!-- Statusbar Clock background chip -->
+    <string name="statusbar_clock_chip_title">Background chip</string>
+    <string name="statusbar_clock_chip_summary">Display accented chip behind clock</string>
 </resources>
