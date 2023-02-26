@@ -29,7 +29,7 @@ import androidx.preference.Preference
 import androidx.preference.forEach
 
 import com.android.internal.logging.nano.MetricsProto
-import com.android.internal.util.crdroid.Utils
+import com.android.internal.util.clown.Utils
 
 import com.android.settings.R
 import com.android.settings.core.SubSettingLauncher
