@@ -145,6 +145,10 @@
     <string name="qs_show_data_usage_title">Show data usage</string>
     <string name="qs_show_data_usage_summary">Show daily cellular/Wi-Fi data usage in QS footer</string>
 
+    <!-- Status bar Icon Manager -->
+    <string name="icon_manager_title">Icon manager</string>
+    <string name="icon_manager_summary">Control visibility of status bar icons</string>
+
     <!-- Swipe to screenshot -->
     <string name="swipe_to_screenshot_title">Swipe to screenshot</string>
     <string name="swipe_to_screenshot_summary">Swipe 3 fingers down the screen to take a screenshot</string>
