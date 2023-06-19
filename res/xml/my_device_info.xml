@@ -21,6 +21,11 @@
     android:key="my_device_info_pref_screen"
     android:title="@string/about_settings">
 
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="clown_info"
+        android:layout="@layout/clown_info"
+        android:selectable="false" />
+
     <PreferenceCategory
         android:key="basic_info_category"
         android:selectable="false"
@@ -33,6 +38,7 @@
             android:title="@string/my_device_info_device_name_preference_title"
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
+            settings:layout="@layout/xd_pref_card_top"
             settings:enableCopying="true"/>
 
         <!-- Account name -->
@@ -42,8 +48,10 @@
             android:title="@string/my_device_info_account_preference_title"
             android:summary="@string/summary_placeholder"
             settings:enableCopying="true"
+            settings:layout="@layout/xd_pref_card_mid"
             settings:controller="com.android.settings.deviceinfo.BrandedAccountPreferenceController"/>
 
+<<<<<<< HEAD
         <!-- Phone number -->
         <!--com.android.settings.deviceinfo.PhoneNumberSummaryPreference
             android:key="phone_number"
@@ -140,27 +148,33 @@
             settings:isPreferenceVisible="@bool/config_show_sim_info"
             settings:controller="com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController"/>
 
+=======
+>>>>>>> 2fcee20a96 (ClownUI: Redesign Settings Style)
         <!-- Android version -->
         <Preference
             android:key="firmware_version"
-            android:order="42"
-            android:title="@string/firmware_version"
-            android:summary="@string/summary_placeholder"
-            android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
-            settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
+            android:order="3"
+            android:title="@string/firmware_info"
+            android:summary="@string/firmware_info_summary"
+            settings:layout="@layout/xd_pref_card_bot"
+            settings:highlightableMenuKey="@string/menu_key_firmwareversion"
+            android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"/>
+
     </PreferenceCategory>
 
-    <PreferenceCategory
+     <PreferenceCategory
         android:title="@string/my_device_info_device_identifiers_category_title">
 
-        <!--IP address -->
+        <!-- Model & hardware -->
         <Preference
-            android:key="wifi_ip_address"
-            android:order="44"
-            android:title="@string/wifi_ip_address"
-            android:summary="@string/summary_placeholder"
-            android:selectable="false"
-            settings:enableCopying="true"/>
+            android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
+            android:key="device_model"
+            android:summary="@string/model_summary"
+            android:title="@string/model_name"
+            settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"
+            settings:enableCopying="true"
+            settings:layout="@layout/xd_pref_card_top"
+            settings:keywords="@string/keywords_model_and_hardware"/>
 
         <!-- Wi-Fi MAC address -->
         <Preference
@@ -169,25 +183,8 @@
             android:title="@string/status_wifi_mac_address"
             android:summary="@string/view_saved_network"
             android:fragment="com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2"
+            settings:layout="@layout/xd_pref_card_mid"
             settings:enableCopying="false"/>
-
-        <!-- Factory Wi-Fi MAC address -->
-        <Preference
-            android:key="wifi_mac_address"
-            android:order="46"
-            android:title="@string/status_device_wifi_mac_address"
-            android:summary="@string/summary_placeholder"
-            android:selectable="false"
-            settings:enableCopying="true"/>
-
-        <!-- Bluetooth address -->
-        <Preference
-            android:key="bt_address"
-            android:order="47"
-            android:title="@string/status_bt_address"
-            android:summary="@string/summary_placeholder"
-            android:selectable="false"
-            settings:enableCopying="true"/>
 
         <!-- Device up time -->
         <Preference
@@ -195,12 +192,14 @@
             android:order="48"
             android:title="@string/status_up_time"
             android:summary="@string/summary_placeholder"
+            settings:layout="@layout/xd_pref_card_mid"
             android:selectable="false"/>
 
         <!-- Manual -->
         <Preference
             android:key="manual"
             android:order="50"
+            settings:layout="@layout/xd_pref_card_mid"
             android:title="@string/manual">
             <intent android:action="android.settings.SHOW_MANUAL"/>
         </Preference>
@@ -210,6 +209,7 @@
             android:key="device_feedback"
             android:order="51"
             android:title="@string/device_feedback"
+            settings:layout="@layout/xd_pref_card_mid"
             settings:keywords="@string/keywords_device_feedback"/>
 
         <!-- Device FCC equipment id -->
@@ -217,6 +217,7 @@
             android:key="fcc_equipment_id"
             android:order="52"
             android:title="@string/fcc_equipment_id"
+            settings:layout="@layout/xd_pref_card_mid"
             android:summary="@string/summary_placeholder"/>
 
         <!-- Build number -->
@@ -226,6 +227,7 @@
             android:title="@string/build_number"
             android:summary="@string/summary_placeholder"
             settings:enableCopying="true"
+            settings:layout="@layout/xd_pref_card_bot"
             settings:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController"/>
     </PreferenceCategory>
 
