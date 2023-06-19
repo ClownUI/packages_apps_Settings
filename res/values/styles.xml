@@ -990,4 +990,9 @@
         <item name="android:textAllCaps">false</item>
         <item name="android:singleLine">true</item>
     </style>
+
+    <style name="TextAppearance.HomepagePreferenceTitle" parent="@android:style/TextAppearance.DeviceDefault">
+        <item name="android:textSize">20sp</item>
+    </style>
+
 </resources>

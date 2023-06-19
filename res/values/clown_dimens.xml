@@ -11,7 +11,23 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+     <!-- xd. Toolbar -->
+     <dimen name="xd_toolbar_height">179dp</dimen>
+     <dimen name="xd_toolbar_expanded_title_margin_start">24dp</dimen>
+     <dimen name="xd_toolbar_expanded_title_margin_end">24dp</dimen>
+
+     <!-- xd. Preference Card -->
+     <dimen name="xd_pref_card_radius">22dp</dimen>
+     <dimen name="xd_pref_card_radius-outer">0dp</dimen>
+     <dimen name="xd_pref_card_radius-flat">0dp</dimen>
+     <dimen name="xd_pref_card_vertical_padding">32dp</dimen>
+     <dimen name="xd_pref_card_horizontal_padding">16dp</dimen>
+     <dimen name="xd_pref_card_horizontal_padding-negative">-16dp</dimen>
+
     <!-- Applications fragment -->
     <dimen name="default_margin">16dp</dimen>
+    
 </resources>

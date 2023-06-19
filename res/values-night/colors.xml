@@ -62,5 +62,8 @@
 
     <!-- Icon tint color for battery usage system icon -->
     <color name="battery_usage_system_icon_color">@android:color/white</color>
+
+    <color name="user_crd_bg">@android:color/system_neutral1_800</color>
+
 </resources>
 
