@@ -31,14 +31,15 @@
         <TextView
             android:id="@+id/homepage_title"
             android:text="@string/settings_label"
-            style="@style/HomepageTitleText"
+            style="@style/clown_dashboard_header_title"
             android:layout_width="0dp"
             android:layout_weight="1" />
 
         <ImageView
             android:id="@+id/account_avatar"
-            android:layout_width="@dimen/avatar_length"
-            android:layout_height="@dimen/avatar_length"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="63dp"
             android:layout_marginEnd="@dimen/avatar_margin_end"
             android:visibility="invisible"
             android:accessibilityTraversalAfter="@id/homepage_title"
