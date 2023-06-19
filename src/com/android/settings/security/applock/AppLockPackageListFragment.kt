@@ -28,13 +28,13 @@ import androidx.lifecycle.lifecycleScope
 import androidx.preference.Preference
 import androidx.preference.forEach
 
-import com.android.internal.util.proton.ProtonUtils
+import com.android.internal.util.clown.ClownUtils
 
 import com.android.settings.R
 import com.android.settings.core.SubSettingLauncher
 import com.android.settingslib.PrimarySwitchPreference
 import com.android.settingslib.widget.TwoTargetPreference.ICON_SIZE_SMALL
-import com.android.settings.custom.fragments.CustomDashboardFragment
+import com.android.settings.clown.fragments.ClownDashboardFragment
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -43,7 +43,7 @@ import kotlinx.coroutines.withContext
 private val TAG = AppLockPackageListFragment::class.simpleName
 internal const val PACKAGE_INFO = "package_info"
 
-class AppLockPackageListFragment : CustomDashboardFragment() {
+class AppLockPackageListFragment : ClownDashboardFragment() {
 
     private lateinit var appLockManager: AppLockManager
     private lateinit var pm: PackageManager
@@ -54,7 +54,7 @@ class AppLockPackageListFragment : CustomDashboardFragment() {
         super.onAttach(context)
         appLockManager = context.getSystemService(AppLockManager::class.java)
         pm = context.packageManager
-        launchablePackages = ProtonUtils.launchablePackages(context)
+        launchablePackages = ClownUtils.launchablePackages(context)
         whiteListedPackages = resources.getStringArray(
             com.android.internal.R.array.config_appLockAllowedSystemApps)
     }

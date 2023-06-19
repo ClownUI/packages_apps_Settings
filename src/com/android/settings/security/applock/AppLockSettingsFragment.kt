@@ -28,10 +28,10 @@ import com.android.settings.R
 import com.android.settings.search.BaseSearchIndexProvider
 import com.android.settingslib.core.AbstractPreferenceController
 import com.android.settingslib.search.SearchIndexable
-import com.android.settings.custom.fragments.CustomDashboardFragment
+import com.android.settings.clown.fragments.ClownDashboardFragment
 
 @SearchIndexable
-class AppLockSettingsFragment : CustomDashboardFragment(),
+class AppLockSettingsFragment : ClownDashboardFragment(),
     MenuItem.OnMenuItemClickListener {
 
     private var debugEnabled = SystemProperties.get(DEBUG_PROPERTY, null) == LEVEL_DEBUG

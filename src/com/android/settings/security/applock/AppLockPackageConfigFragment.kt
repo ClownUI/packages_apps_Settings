@@ -28,12 +28,12 @@ import com.android.settings.widget.EntityHeaderController
 import com.android.settingslib.applications.ApplicationsState.AppEntry
 import com.android.settingslib.core.AbstractPreferenceController
 import com.android.settingslib.widget.LayoutPreference
-import com.android.settings.custom.fragments.CustomDashboardFragment
+import com.android.settings.clown.fragments.ClownDashboardFragment
 
 private val TAG = AppLockPackageConfigFragment::class.simpleName
 private const val KEY_HEADER = "header_view"
 
-class AppLockPackageConfigFragment : CustomDashboardFragment() {
+class AppLockPackageConfigFragment : ClownDashboardFragment() {
 
     private lateinit var packageInfo: PackageInfo
 

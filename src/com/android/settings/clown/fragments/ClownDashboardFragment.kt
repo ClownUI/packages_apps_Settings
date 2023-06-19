@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.android.settings.custom.fragments
+package com.android.settings.clown.fragments
 
 import com.android.internal.logging.nano.MetricsProto
 import com.android.settings.dashboard.DashboardFragment
 
-abstract class CustomDashboardFragment: DashboardFragment() {
-    override fun getMetricsCategory(): Int = MetricsProto.MetricsEvent.CUSTOM
+abstract class ClownDashboardFragment: DashboardFragment() {
+    override fun getMetricsCategory(): Int = MetricsProto.MetricsEvent.CLOWN
 }
