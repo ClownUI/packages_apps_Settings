@@ -102,7 +102,8 @@
         <item>@string/status_bar_battery_style_icon_rlandscape_style_b</item>
         <item>@string/status_bar_battery_style_icon_landscape_style_b</item>
         <item>@string/status_bar_battery_style_icon_landscape_ios15</item>
-        <item>@string/status_bar_battery_style_icon_landscape_ios16</item> 
+        <item>@string/status_bar_battery_style_icon_landscape_ios16</item>
+        <item>@string/status_bar_battery_style_icon_landscape_origami</item>
         <item>@string/status_bar_battery_style_circle</item>
         <item>@string/status_bar_battery_style_dotted_circle</item>
         <item>@string/status_bar_battery_style_filled_circle</item>
@@ -134,6 +135,7 @@
         <item>18</item>
         <item>19</item>
         <item>20</item>
+        <item>21</item>
     </string-array>
 
     <!-- QS battery style  -->
@@ -153,6 +155,7 @@
         <item>@string/status_bar_battery_style_icon_landscape_style_b</item>
         <item>@string/status_bar_battery_style_icon_landscape_ios15</item>
         <item>@string/status_bar_battery_style_icon_landscape_ios16</item>
+        <item>@string/status_bar_battery_style_icon_landscape_origami</item>
         <item>@string/status_bar_battery_style_circle</item>
         <item>@string/status_bar_battery_style_dotted_circle</item>
         <item>@string/status_bar_battery_style_filled_circle</item>
@@ -185,4 +188,5 @@
         <item>18</item>
         <item>19</item>
         <item>20</item>
+        <item>21</item>
 </resources>
