@@ -319,4 +319,7 @@
 
     <!-- QS battery -->
     <string name="qs_use_status_bar_battery_style">Follow status bar style</string>
+
+    <!-- QS Header -->
+    <string name="qs_header_image_title">QS Header Image</string>
 </resources>
