@@ -284,6 +284,7 @@
     
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_category_title">Battery customizations</string>
+    <string name="status_bar_qs_category_title">QS customizations</string>
     <string name="battery_style_category_title">Battery icon</string>
     <string name="battery_style_summary">Customize battery icons, hide or show percentage</string>
     <string name="status_bar_battery_style_title">Battery style</string>
@@ -315,4 +316,7 @@
     <string name="status_bar_battery_percent_text_next_left">Next to the icon (left)</string>
     <string name="status_bar_battery_text_charging_title">Battery percentage when charging</string>
     <string name="status_bar_battery_text_charging_summary">Always display battery percentage when charging</string>
+
+    <!-- QS battery -->
+    <string name="qs_use_status_bar_battery_style">Follow status bar style</string>
 </resources>
