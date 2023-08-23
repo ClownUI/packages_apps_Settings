@@ -135,7 +135,7 @@ public class ClownVersionDetailPreferenceController extends BasePreferenceContro
                 this.mContext.getString(R.string.device_info_default));
         String romBuildtype = SystemProperties.get(KEY_CLOWN_BUILDTYPE_PROP,
                 this.mContext.getString(R.string.device_info_default));
-        String shortVersion = romVersion + " | " + romAndroid + " | " + romDevice + " | " + romBuildtype;
+        String shortVersion = romAndroid + " (" + romVersion + ") | " + romDevice + " | " + romBuildtype;
         return shortVersion;
     }
 
