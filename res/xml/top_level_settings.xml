@@ -20,6 +20,26 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="top_level_settings">
 
+    <com.android.settingslib.widget.LayoutPreference
+        android:layout="@layout/top_level_preference_banner_view"
+        android:key="top_level_homepage_banner_view"
+        android:order="-180"/>
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:layout="@layout/homepage_widgets"
+        android:key="top_level_homepage_widgets"
+        android:selectable="false"
+        android:order="-170" />
+
+    <com.android.settings.widget.HomepagePreference
+        android:key="top_level_cherish"
+        android:title="@string/cherish_settings_title"
+        android:summary="@string/cherish_settings_summary"
+        android:icon="@drawable/ic_cherish"
+        android:order="-155"
+        android:fragment="com.cherish.settings.CherishSettings"
+        settings:highlightableMenuKey="@string/menu_key_cherish"/>
+
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.network.NetworkDashboardFragment"
         android:icon="@drawable/ic_settings_wireless"
