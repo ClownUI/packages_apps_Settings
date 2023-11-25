@@ -79,7 +79,7 @@
     <!-- PIN scramble -->
     <string name="unlock_scramble_pin_layout_title">Zufällige Anordnung</string>
     <string name="unlock_scramble_pin_layout_summary">Bei jedem Entsperrversuch die Ziffernanordnung zufällig neu wählen</string>
-    
+
     <!-- Default getTimeSpentInApp string for Wellbeing to display. [CHAR LIMIT=NONE] --> 
     <string name="duration_less_than_one_minute">Less than 1 Minute</string> 
     <!-- Summary for Wellbeing screen time usage. [CHAR LIMIT=NONE] -->
@@ -307,4 +307,11 @@
     <string name="berry_black_theme_title">Pure black</string>
     <string name="berry_black_theme_summary">Pure black background for dark theme</string>
 
+    <!-- Island Notification -->
+    <string name="island_notification_title">Island notification</string>
+    <string name="island_notification_summary">Display heads-up notification in Dynamic Island style</string>
+    <string name="island_notification_footer_text">
+        The Island notification feature, inspired by iOS\'s Dynamic Island, transforms Android\'s heads-up notifications into quick-access and compact notification utility.\n\nIsland Quick Access Controls includes the following features:\n1. Tap island notification to quick answer phone calls.\n2. Long press island notification to reject phone calls.\n3. Long press island notification to expand the island notification preview.
+    </string>
+    
 </resources>
