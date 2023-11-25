@@ -73,6 +73,7 @@ android_library {
         "res-export", // for external usage
         "res-product",
         "Carnival/res",
+        "SettingsGoogle/res",
     ],
 
     static_libs: [
