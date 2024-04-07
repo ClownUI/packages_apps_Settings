@@ -23,6 +23,7 @@
     <string name="build_date">Build date</string>
 
     <!-- Hardware info -->
+    <string name="device_market_name">Market Name</string>
     <string name="platform_revision">Platform</string>
     <string name="total_ram">Total RAM</string>
 
