@@ -151,6 +151,12 @@
             android:title="@string/notifications_kill_app_button_title"
             android:summary="@string/notifications_kill_app_button_summary"
             android:defaultValue="false" />
+        <!-- Floating clear all -->
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="notification_material_dismiss"
+            android:title="@string/quick_settings_floating_clear_all_title"
+            android:summary="@string/quick_settings_floating_clear_all_summary"
+            android:defaultValue="false" />
     </PreferenceCategory>
 
     <PreferenceCategory
