@@ -143,6 +143,17 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="notifications_interface_category"
+        android:title="@string/notifications_interface_category">
+        <!-- Kill app button -->
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="notification_guts_kill_app_button"
+            android:title="@string/notifications_kill_app_button_title"
+            android:summary="@string/notifications_kill_app_button_summary"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:title="@string/category_name_display_controls"
         android:order="-150">
 
