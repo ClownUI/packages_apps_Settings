@@ -437,4 +437,6 @@
     <!-- 4G icon -->
     <string name="show_fourg_icon_title">4G icon</string>
     <string name="show_fourg_icon_summary">Display 4G icon in signal icon instead LTE</string>
+    <string name="status_bar_wifi_standard_icon_title">Wi-Fi standard</string>
+    <string name="status_bar_wifi_standard_icon_summary">Display Wi-Fi standard next the Wi-Fi icon</string>  
 </resources>
