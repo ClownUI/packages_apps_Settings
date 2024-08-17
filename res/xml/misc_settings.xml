@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res-auto"
+        android:key="misc_settings"
+        android:title="@string/misc_settings_title">
+
+        <SwitchPreferenceCompat
+            android:key="use_photos_spoof"
+            android:title="@string/use_photos_spoof_title"
+            android:summary="@string/use_photos_spoof_summary"
+            android:defaultValue="true" />
+
+        <com.android.settings.custom.preference.SystemPropertySwitchPreference
+            android:key="persist.sys.pixelprops.integrity"
+            android:title="@string/play_integrity_spoof_title"
+            android:summary="@string/play_integrity_spoof_summary"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="use_netflix_spoof"
+            android:title="@string/netflix_spoof_title"
+            android:summary="@string/netflix_spoof_summary"
+            android:defaultValue="false" />
+
+</PreferenceScreen>

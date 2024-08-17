@@ -235,4 +235,20 @@
     <!-- Force LTE_CA -->
     <string name="force_lte_ca">Force LTE CA</string>
     <string name="force_lte_ca_summary">Force LTE carrier aggregation to work</string>
+
+    <!-- Misc Settings -->
+    <string name="misc_settings_title">Misc</string>
+
+    <!-- Google Play Integrity Spoof -->
+    <string name="use_photos_spoof_title">Google Play Integrity spoof</string>
+    <string name="use_photos_spoof_summary">Spoof your device as different model for Google Play Integrity</string>
+
+    <!-- Netflix Spoof -->
+    <string name="netflix_spoof_title">Netflix spoof</string>
+    <string name="netflix_spoof_summary">Spoof your device as different model for Netflix</string>
+
+    <!-- Unlimited g00gle ph0t0s st0rage -->
+    <string name="use_photos_spoof_title">Unlimited Google photo storage</string>
+    <string name="use_photos_spoof_summary">Your device will be identified as a Pixel XL to get unlimited Google photo storage at original quality</string>
+    <string name="photos_spoof_toast">Restart the Photos app for it to take effect</string>
 </resources>
