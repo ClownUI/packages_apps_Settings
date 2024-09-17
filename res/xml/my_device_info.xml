@@ -21,6 +21,20 @@
     android:key="my_device_info_pref_screen"
     android:title="@string/about_settings">
 
+        <com.android.settingslib.widget.LayoutPreference
+            android:key="my_device_hw_header"
+            android:order="-998"
+            android:layout="@layout/about_device_info_hw"
+            android:selectable="false"
+            settings:isPreferenceVisible="true"/>
+
+        <com.android.settingslib.widget.LayoutPreference
+            android:key="my_device_spc_header"
+            android:order="-996"
+            android:layout="@layout/about_device_infospc_hw"
+            android:selectable="false"
+            settings:isPreferenceVisible="true"/>
+
     <PreferenceCategory
         android:key="basic_info_category"
         android:selectable="false"

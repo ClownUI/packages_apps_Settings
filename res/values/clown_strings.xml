@@ -59,4 +59,9 @@
     <string name="selinux_status_disabled">Disabled</string>
     <string name="selinux_status_permissive">Permissive</string>
     <string name="selinux_status_enforcing">Enforcing</string>
+
+     <!-- About phone screen, status item label -->
+    <string name="firmware_info">Firmware Information</string>
+    <string name="firmware_info_summary">Information about firmware in this phone</string>
+    <string name="usercard_summary">Manage all user profile available in this device here</string>
 </resources>
