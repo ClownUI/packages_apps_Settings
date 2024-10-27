@@ -80,14 +80,7 @@ public class BuildNumberPreferenceController extends BasePreferenceController im
 
     @Override
     public CharSequence getSummary() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(BidiFormatter.getInstance().unicodeWrap(Build.DISPLAY));
-        String ClownVersion = VersionUtils.getClownVersion();
-        if (!ClownVersion.equals("")){
-            sb.append("\n");
-            sb.append(ClownVersion);
-        }
-        return sb.toString();
+        return BidiFormatter.getInstance().unicodeWrap(Build.DISPLAY);
     }
 
     @Override
